@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="view.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="view.js"></script>
+</head>
+<body>
+    <div class="naviBar flex">
+        <div class="flex">
+            <a href="home.html">
+                <div class="flex naviItem">
+                    <div class="logoCon"><img class="logoImg" src="./img/RamenTV logo.png" alt=""></div>
+                    <div class="RamenTV">RamenTV</div>
+                </div>
+            </a>
+            <div class="naviItem"><a href="home.html#movies">Movie</a></div>
+            <div class="naviItem"><a href="home.html#series">Series</a></div>
+        </div>
+        <div class="naviItem" onclick="login()" id="login">Login</div>
+    </div>
+    <div class="mainCon">
+        <div class="videoCon">
+            <video autoplay muted id="videoId">
+                <source  src="">
+                does not support
+            </video>
+        </div>
+        <div class="upperCon">
+            <div class="viewData">
+                <h1 class="title" id="title"></h1>
+                <div class="genre" >
+                    <label for="genre">Genre: </label>
+                    <div id="genre"></div>
+                </div>
+                <div class="preview" id="preview">
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="seasonCon" id="seasonCon">
+            
+
+        </div>
+    </div>
+    
+</body>
+</html>

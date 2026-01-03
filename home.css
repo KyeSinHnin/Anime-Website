@@ -1,0 +1,466 @@
+body,html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.favIcon{
+    cursor:pointer;
+}
+
+/* Login Form */
+.loginCon{
+    position: fixed;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(95, 94, 94,0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginForm{
+    color: black;
+    position: fixed;
+    z-index: 16;
+    background-color: lightgray;
+    border-radius: 25px;
+    border:5px white solid;
+    padding: 10px 20px;
+    margin: 0;
+    
+}
+.loginForm input{
+    background-color: white;
+    font-size: 14px;
+    width: 200px;
+    border: 1px white solid;
+    border-bottom: 1px solid black;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.loginData{
+    font-size: 16px;
+    line-height: 43px;
+}
+.btnSign{
+    margin: 20px 0 5px 0;
+    justify-content: space-between;
+}
+.btn{
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: gold;
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+.warning{
+    color: red;
+}
+/*Navigation Bar*/
+.naviBar{
+    justify-content: space-around;
+    height: 50px;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0; 
+    background-color: rgb(1, 1, 44);
+    z-index: 15;
+}
+.naviItem{
+    margin: 0 20px;
+    font-size: 18px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.logoCon{
+    width: 100px;
+}
+.logoImg{
+    width: 100%;
+}
+.RamenTV{
+    font-size: 35px;
+    font-weight: bold;
+}
+.search{
+    display: flex;
+    align-items: center;
+    border-bottom:1px solid gold;
+    width: 300px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.searchInput:hover{
+    transition: 0.5s;
+    transform:ease-in;
+    transform: translateY(-3px);
+}
+.searchIcon{
+    color: black;
+    border-radius: 20px;
+    padding: 5px;
+}
+.btnSearch{
+    border-radius: 20px;
+    padding: 0;
+    background-color: gold;
+    border: none;
+}
+.btnSearch:hover{
+    background-color: darkgoldenrod;
+}
+.searchInput{
+    background-color:rgb(1, 1, 44) ;
+    font-size: 18px;
+    color:white;
+    width: 90%;
+    outline: none;
+    border: none;
+}
+#loginLabel{
+    cursor: pointer;
+}
+/* Background image */
+.backImgCon{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    display: block;
+}
+.backImg{
+    width: 130%;
+}
+.slide-up-animation-genre{
+    animation-duration: 2s;
+    animation-fill-mode: ease-in;
+    animation-name: slide-up-genre;
+
+    transform: translateY(-410px);
+}
+@keyframes slide-up-genre{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-410px);
+    }      
+}
+.slide-up-animation{
+    animation-duration: 2s;
+    animation-fill-mode: ease-in;
+    animation-name: slide-up;
+
+    transform: translateY(-380px);
+}
+@keyframes slide-up{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-380px);
+    }      
+}
+
+/*Genre Bar*/
+.genre-bar{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    z-index: 10;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+}
+.genre-element{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.active{
+    background-color: darkgray;
+}
+
+
+
+
+
+
+
+html,
+    body {
+      
+      height: 100%;
+      background-color: rgb(0, 0, 0);
+    }
+
+    body {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: white;
+    }
+
+.mainInner{
+    padding: 30px;
+}
+.heading{
+    font-family: "Anton", sans-serif;
+    padding: 30px 0 0 25px;
+    font-size: 20px;
+    
+}
+.videoTitle{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    height: 50px;
+}
+
+/*Movies*/
+
+.scrollConOutside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.scrollCon{
+    width: 97%;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.slide{
+    text-align: center;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+.imgBox:hover{
+    transform:translateY(10px);
+}
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+}
+.imgBox{
+    width: 202px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgb(0, 0, 0,0.5);
+    transition: 0.5s ease-in-out;
+}
+.imgBox:before{
+    border-radius: 20px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent,rgba(0, 0, 0, 0.5),rgb(0, 0, 0));
+    z-index: 3;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.imgBox:hover::before{
+    opacity: 1;
+}
+.imgBox .info{
+    top: 0;
+    left: 0;
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    z-index: 4;
+    color: white;
+    opacity: 0;
+    padding: 10px;
+    margin-left: -210px;
+    transform: translateY(30px);
+    transition: 0.5s all;
+
+}
+.imgBox:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.genre{
+    display: flex;
+    align-items: flex-start;
+    font-size: 16px;
+}
+.genreCon{
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    width: 140px;
+    flex-wrap: wrap;
+    margin: 0;
+}
+/*Play button*/
+.button{
+    display: flex;
+    align-items: center;
+    width: 55px;
+    justify-content: center;
+    border: 2px solid white;
+    padding: 3px 9px;
+    border-radius: 24px;
+    margin: 5px 0;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.none{
+    display: none;
+}
+.wrapper .movies,.series{
+    display: grid;
+    gap: 18px;
+    overflow-x: auto;
+    overflow-y: visible;
+    scrollbar-width: 0;
+}
+.movies{
+    grid-template-columns: repeat(23,1fr);
+}
+.series{
+    grid-template-columns: repeat(20,1fr);
+}
+
+.wrapper .movies::-webkit-scrollbar{
+    display: none;
+}
+.wrapper .series::-webkit-scrollbar{
+    display: none;
+}
+
+.wrapper .slide-button{
+    z-index: 5;
+    position: absolute;
+    height: 50px;
+    width:50px;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    font-size: 2.2rem;
+    cursor: pointer;
+    display: block;
+    
+}
+.wrapper .slide-button#mprev-slide{
+    left: -20px;
+    display: none;
+}
+.wrapper .slide-button#mnext-slide{
+    right: -20px;
+}
+.wrapper .slide-button#sprev-slide{
+    left: -20px;
+    display: none;
+}
+.wrapper .slide-button#snext-slide{
+    right: -20px;
+}
+.wrapper .slide-button:hover{
+    background-color: rgb(110, 110, 110);
+}
+
+/*Custum scrollbar*/
+.scrollCon .slider-scrollbar{
+    height: 24px;
+    width: 100%;
+}
+
+.slider-scrollbar .scrollbar-track{
+    height:2px;
+    width: 100%;
+    background-color: rgb(88, 88, 88);
+    position: relative;
+    border-radius: 4px;
+}
+
+.slider-scrollbar:hover .scrollbar-track{
+    height:4px;
+}
+
+.slider-scrollbar .scrollbar-tumb{
+    position: absolute;
+    height:100%;
+    width: 50%;
+    background-color: white;
+    border-radius: inherit;
+    cursor: grab;
+}
+
+.slider-scrollbar .scrollbar-tumb:active{
+    cursor: grabbing;
+    height: 8px;
+    top:-2px
+}
+
+.slider-scrollbar .scrollbar-tumb::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:-10px;
+    bottom: -10px;
+}
+
+.change-form{
+    .movies{
+        grid-template-columns: repeat(5,auto);
+    }
+    .series{
+        grid-template-columns: repeat(5,auto);
+    }
+    .slider-scrollbar{
+        display: none;
+    }
+    .slide-button{
+        display: none;
+    }
+    .genre-bar{
+        position: fixed;
+    }
+
+}
